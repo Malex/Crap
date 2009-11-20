@@ -20,4 +20,6 @@ typedef struct MYarray
 
 /* Functions */
 double pow(double,int);
+double sqrt(double);
 double sum(array_t);
+array_t divisors(int);

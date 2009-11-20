@@ -15,11 +15,33 @@ double pow(double base, int exp)
 	return base;
 }
 
+double sqrt(double num) /* to do, inserted only to avoid compiler errors */
+{
+	return num;
+}
+
 double sum(array_t myarr) /* It read an array and returns the sum of all values*/
 {
 	int i;
 	double ret=0;
 	for(i=0; i<myarr.size_t; i++)
 		ret+=myarr.array[i];
+	return ret;
+}
+
+array_t divisors(int num)
+{
+	int i,size=0;
+	int* arr;
+	array_t ret;
+	for(i=1;i<sqrt(num);i++)
+	{
+		if(num%i==0)
+		{
+			arr[i-1]=i;
+			size++;
+		}
+	}
+	ret = (array_t) { size,(double*) arr };
 	return ret;
 }
