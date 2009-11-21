@@ -24,7 +24,7 @@ double sum(array_t myarr) /* It read an array and returns the sum of all values*
 {
 	int i;
 	double ret=0;
-	for(i=0; i<myarr.size_t; i++)
+	for(i=0; i<myarr.size; i++)
 		ret+=myarr.array[i];
 	return ret;
 }
@@ -44,4 +44,13 @@ array_t divisors(int num)
 	}
 	ret = (array_t) { size,(double*) arr };
 	return ret;
+}
+
+unsigned int is_prime(int num)
+{
+	array_t arr = divisors(num);
+	if(arr.size==2)
+		return 1;
+	else
+		return 0;
 }

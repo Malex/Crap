@@ -14,7 +14,7 @@
 /* Needed Structure */
 typedef struct MYarray
 {
-	unsigned int size_t;
+	unsigned int size;
 	double* array;
 } array_t;
 
@@ -23,3 +23,4 @@ double pow(double,int);
 double sqrt(double);
 double sum(array_t);
 array_t divisors(int);
+unsigned int is_prime(int);
