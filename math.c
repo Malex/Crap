@@ -10,17 +10,24 @@ double pow(double base, int exp)
 	int i;
 	if(exp==0)
 		return 1;
+	else if(exp<0)
+	{
+		base=1/base;
+		exp*=-1;
+	}
 	for(i=1; i<exp; i++)
 		base*=base;
 	return base;
 }
 
-double sqrt(double num) /* to do, inserted only to avoid compiler errors */
+double sqrt(double num) /* to do, inserted only to avoid
+* compiler errors */
 {
 	return num;
 }
 
-double sum(array_t myarr) /* It read an array and returns the sum of all values*/
+double sum(array_t myarr) /* It read an array and returns
+* the sum of all values*/
 {
 	int i;
 	double ret=0;
