@@ -11,6 +11,8 @@
 #define PI_4 PI/4.0
 #define PI_6 PI/6.0
 
+#define TRUE 1
+#define FALSE 0
 /* Needed Structure */
 typedef struct MYarray
 {
@@ -20,6 +22,7 @@ typedef struct MYarray
 
 /* Functions */
 double pow(double,int);
+int int_sqrt(int,int*);
 double sqrt(double);
 double sum(array_t);
 array_t divisors(int);
