@@ -1,16 +1,23 @@
+#include "std.h"
+
 class Int
 {
-      protected int value;
+      protected:
+      		 int value;
       public:
-             bool isset = false;
-             
-             Int() {}
+             bool isset;
+
+             Int()
+             {
+             	isset = false;
+             }
+
              Int(int val)
              {
                      isset = true;
                      value = val;
              }
-             
+
              int read()
              {
                  return value;
@@ -19,7 +26,7 @@ class Int
              {
                   value = val;
              }
-             
+
              Int operator + (Int sum)
              {
                  return *(new Int(value+sum.read()));
@@ -40,4 +47,4 @@ class Int
              {
                  return *(new Int(value%mul.read()));
              }
-};    
+};
