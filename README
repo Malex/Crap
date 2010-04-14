@@ -1,0 +1,11 @@
+Crap is a new programmimg language, written by Malex
+for exercise.
+Its main features are to be highly modulable,
+easy pluggable, to give a simple access to low level
+controls (such as pointer and memory allocation) remaining 
+a high level language though.
+It is completely object-oriented, but you are free to 
+use other programming paradigm.
+Its syntax is created on-the-fly, while writing the parser
+or the doc.
+
