@@ -26,10 +26,14 @@ T dictionary::operator[] (string key) const {
 	}
 }
 
-vector<string> keys() const {
+vector<string> dictionary::keys() const {
 	return this->key;
 }
 
-vector<T> values() const {
+vector<T> dictionary::values() const {
 	return this->value;
+}
+
+uint dictionary::size() const {
+	return this->key.size();
 }

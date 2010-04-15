@@ -5,6 +5,8 @@
 #include <vector>
 #include <string>
 
+typedef unsigned int uint;
+
 template<class T>
 class dictionary {
 
@@ -17,6 +19,8 @@ class dictionary {
 
 		vector<std::string> keys() const;
 		vector<T> values() const;
+
+		uint size() const;
 
 	private:
 		vector<std::string> key;
