@@ -4,20 +4,17 @@
 
 using namespace std;
 
-dictionary::dictionary(vector<string> keys, vector<T> values)
-{
+dictionary::dictionary(vector<string> keys, vector<T> values) {
 	this->key = keys;
 	this->value = values;
 }
 
-dictionary::~dictionary()
-{
+dictionary::~dictionary() {
 	~(this->key);
 	~(this->value);
 }
 
-T dictionary::operator[] (string key) const
-{
+T dictionary::operator[] (string key) const {
 	for(int i=0;
 		(i <= this->key.size) && (this->key[i] != key);
 		 i++) {}
@@ -29,12 +26,10 @@ T dictionary::operator[] (string key) const
 	}
 }
 
-vector<string> keys() const
-{
+vector<string> keys() const {
 	return this->key;
 }
 
-vector<T> values() const
-{
+vector<T> values() const {
 	return this->value;
 }
