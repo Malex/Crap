@@ -5,20 +5,23 @@
 #include <vector>
 #include <string>
 
+template<class T>
 class dictionary {
 
 	public:
-		dictionary();
-		dictionary(vector<class T>,vector<class T>);
-		dictionary(vector<class T>*);
+		//dictionary();
+		dictionary(vector<std::string>,vector<T>);
 		~dictionary();
 
+		T operator[] (std::string) const;
 
+		vector<std::string> keys() const;
+		vector<T> values() const;
 
 	private:
+		vector<std::string> key;
+		vector<T> value;
 
-		vector<class T> key;
-		vector<class T> values;
 
 };
 #endif //DICTIONARY_CRAP
